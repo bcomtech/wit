@@ -28,16 +28,7 @@
           <li class="is-active orbit-slide"><a href="#"><img class="orbit-image" src="img/banner2.png"></a></li>
         </ul>
     
-       <!--  <nav class="orbit-bullets">
-          <button class="is-active" data-slide="0">
-            <span class="show-for-sr">First Slide details</span>
-            <span class="show-for-sr">Current Slide</span>
-          </button>
-          <button class="is-active" data-slide="1">
-            <span class="show-for-sr">Second Slide</span>
-          </button>
-        </nav> -->
-      </div>
+    </div>
       
     </div>
       </div>
@@ -85,7 +76,680 @@
           <div class="row contact-us-button text-right show-for-medium " >
             <a data-open="Contact-us-page"><img class="medium-12 columns" src="img/contact-us.png"></a>
           </div>
+
+        
+<!-- Modals begin here -->
+
+
+        <div class="reveal" id="login-page" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down"> <!-- Login-page modal begins here -->
+       <h2  class="text-center">Login Form</h2>
+<form data-abide novalidate>
+       <div class="alert callout" style="display: none;" data-abide-error>
+         <p><i class="fi-alert"></i>There're some problems in the form!</p>
+       </div>
+         <div class="row medium-8 small-8 columns ">
+           Email:</label>
+              <input type="text" name="" placeholder="Your Email" required pattern="email">
+              <span class="form-error">
+                <i class="fi-alert">The Email field is mandatory</i>
+              </span>
+           
+         </div>
+         <div class="row medium-8 small-8 columns">
+           <label>Password:</label>
+              <input type="Password" name="" placeholder="Your Password" required>
+              <span class="form-error">
+                <i class="fi-alert">The Password field is mandatory</i>
+              </span>
+         </div>
+         <div class="row medium-8 small-8  columns">
+           <a href="#">Forgot password?</a>
+         </div><br>
+         
+          <div class="row medium-8 small-8 columns">
+           <label>
+            <input type="submit" value="Login" class="button" name="">
+            <!-- <button class="button success" type="reset" value="Reset">Reset</button> -->
+           </label>
+         </div>
+
+       </form>
+       <button class="close-button" data-close aria-label="close reveal" type="button"> <span aria-hidden="true">&times;</span>
+             </button>
+     </div> <!--/#Login page ends here -->
+
+          <div class="reveal" id="Contact-us-page" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down"> <!-- Contact-us-page modal begins here -->
+       <h2  class="text-center">Contact Form</h2>
+
+       <form data-abide novalidate>
+
+       <div class="alert callout" style="display: none;" data-abide-error>
+         <p><i class="fi-alert"></i>There're some problems in the form!</p>
+       </div>
+         <div class="row columns">
+           <label>Name:
+              <input type="text" name="" placeholder="Your Name" required>
+              <span class="form-error">
+                <i class="fi-alert">The name field is mandatory</i>
+              </span>
+           </label>
+         </div>
+         <div class="row columns">
+           <label>Email:
+              <input type="text" name="" placeholder="Your Email" required pattern="email">
+              <span class="form-error">
+                <i class="fi-alert">The email field is mandatory</i>
+              </span>
+           </label>
+         </div>
+         <div class="row columns">
+           <label>Phone:
+              <input type="text" name="" placeholder="Your Phone Number" required pattern="number">
+              <span class="form-error">
+                <i class="fi-alert">The phone field is mandatory</i>
+              </span>
+           </label>
+         </div>
+         <div class="row columns">
+           <label>Message:
+              <textarea rows="6" name="" placeholder="Your Message" required></textarea>
+              <span class="form-error">
+                <i class="fi-alert">The message field is mandatory</i>
+              </span> 
+           </label>
+         </div>
+          <div class="row columns">
+           <label>
+            <input type="submit" value="Submit" class="button" name="">
+            <button class="button success" type="reset" value="Reset">Reset</button>
+           </label>
+         </div>
+
+       </form>
+       <button class="close-button" data-close aria-label="close reveal" type="button"> <span aria-hidden="true">&times;</span>
+             </button>
+     </div> <!--/# Contact-us modal ends here -->
+
+          <div class="reveal" id="signup-page" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down"> <!-- Sign-up-page modal begins here -->
+       <h4  class="text-center">Sign-Up Form</h4>
+
+       <form data-abide novalidate>
+       <div class="alert callout" style="display: none;" data-abide-error>
+         <p><i class="fi-alert"></i>There're some problems in the form!</p>
+       </div>
+        <div class="row">
+          <div class=" medium-6 small-6 columns">
+           <label>Title:
+              <select required name="title">
+                <option></option>
+                 <option>Mr.</option>
+                 <option>Mrs.</option>
+                 <option>Miss.</option>
+              </select>
+              <span class="form-error">
+                <i class="fi-alert">The Title field is mandatory</i>
+              </span>
+           </label>
+         </div>
+        </div>
+        <div class="row">
+          <div class=" medium-6  small-6 columns">
+           <label>First Name:
+              <input type="text" name="" placeholder="Your First Name" required>
+              <span class="form-error">
+                <i class="fi-alert">The First name field is mandatory</i>
+              </span>
+           </label>
+         </div>
+         <div class=" medium-6 small-6 columns">
+           <label>Last Name:
+              <input type="text" name="" placeholder="Your Last Name" required>
+              <span class="form-error">
+                <i class="fi-alert">The last name field is mandatory</i>
+              </span>
+           </label>
+         </div>
+        </div>
+        <div class="row">
+          <div class=" medium-6 small-6 columns">
+           <label>Phone Number:
+              <input type="text" name="" placeholder="Phone Number" required pattern="number">
+              <span class="form-error">
+                <i class="fi-alert">The Phone Number field is mandatory</i>
+              </span>
+           </label>
+         </div>
+         <div class=" medium-6 small-6 columns">
+           <label>Alternate Phone Number:
+              <input type="text" name="" placeholder="Alternate Number" pattern="number">
+              <span class="form-error">
+                <!-- <i class="fi-alert">The name field is mandatory</i> -->
+              </span>
+           </label>
+         </div>
+        </div>
+        <div class=" row columns">
+           <label>Address:
+              <input type="text" name="" placeholder="Address" required>
+              <span class="form-error">
+                <i class="fi-alert">The Address field is mandatory</i>
+              </span>
+           </label>
+         </div>
+         <div class="row">
+          <div class=" medium-6 small-6 columns">
+           <label>City:
+              <input type="text" name="" placeholder="City" required>
+              <span class="form-error">
+                <i class="fi-alert">The City field is mandatory</i>
+              </span>
+           </label>
+         </div>
+         <div class=" medium-6 small-6 columns">
+           <label>Country:
+              <input type="text" name="" placeholder="Country" required>
+              <span class="form-error">
+                <i class="fi-alert">The Country field is mandatory</i>
+              </span>
+           </label>
+         </div>
+        </div>
+        <div class="row columns">
+           <label>Email:
+              <input type="text" name="" placeholder="Email" required pattern="email">
+              <span class="form-error">
+                <i class="fi-alert">The Email field is mandatory</i>
+              </span>
+           </label>
+         </div>
+         <div class="row">
+          <div class=" medium-6 small-6 columns">
+           <label>Password:
+              <input type="password" name="" placeholder="Your Name" required>
+              <span class="form-error">
+                <i class="fi-alert">The Password field is mandatory</i>
+              </span>
+           </label>
+         </div>
+         <div class=" medium-6 small-6 columns">
+           <label>Confirm Password:
+              <input type="password" name="" placeholder="Your Name" required>
+              <span class="form-error">
+                <i class="fi-alert">The confirm password field is mandatory</i>
+              </span>
+           </label>
+         </div>
+        </div>
+          <div class=" row columns">
+           <label>
+              <input type="checkbox" name="" placeholder="Your Name" required>
+              <span>I have read and agree to the terms and conditons and Privacy policy</span>
+              <span class="form-error">
+                <i class="fi-alert">The Terms checkbox  field is mandatory continue</i>
+              </span>
+           </label>
+         </div>
+         <div class=" row columns">
+           <label>
+              <input type="checkbox" name="" placeholder="Your Name">
+              <span>Subscribe for special travel deals, offers and other information</span>
+              <span class="form-error">
+                <!-- <i class="fi-alert">The name field is mandatory</i> -->
+              </span>
+           </label>
+         </div>
+         
+          <div class="row columns">
+           <label>
+            <input type="submit" value="Submit" class="button" name="">
+            <button class="button success" type="reset" value="Reset">Reset</button>
+           </label>
+         </div>
+
+       </form>
+       <button class="close-button" data-close aria-label="close reveal" type="button"> <span aria-hidden="true">&times;</span>
+             </button>
+     </div> <!--/#Signup page ends here -->
+
+    <div id="big-banner">
+    <!-- orbit begins here -->
+    <div class="orbit" role="region" aria-label="Our Services" data-orbit data-options="animInFromLeft: fade-in; animInFromRight:fade-in; animOutToLeft: fade-out; animOutToRight: fade-out" > 
+        <ul class="orbit-container">
+          <button class="orbit-previous">
+            <span class="show-for-sr">Previous Slide</span>
+            &#9664; &#xFE0E;
+          </button>
+          <button class="orbit-next">
+            <span class="show-for-sr">Next Slide</span>
+            &#9654; 
+          </button>
+    
+          <li class="is-active orbit-slide"><a href="#"><img class="orbit-image" src="img/bannerslidearik.jpg"></a></li>
+          <li class="is-active orbit-slide"><a href="#"><img class="orbit-image" src="img/bannerslidebritish.jpg"></a></li>
+          <li class="is-active orbit-slide"><a href="#"><img class="orbit-image" src="img/bannerslideemirates.jpg"></a></li>
+          <!-- <li class="is-active orbit-slide"><a href="#"><img class="orbit-image" src="img/banner2.png"></a></li> -->
+        </ul>
+    
+     </div>
+     <!-- ./orbit -->
+        
+    </div> <!-- ./big-banner -->
+        <div class="search-section">
+        <div class="search-form row">
+
+          <div class="row large-8 medium-12 columns">
+          <ul class="menu columns">
+            <li class="wide-menu is-active text-center" id="flight-search-menu-item"><a href="#">Flight</a></li>
+            <li class="">&nbsp&nbsp</li>
+            <!-- <li class="wide-menu text-center" id="hotel-search-menu-item"><a href="#">Hotels</a></li> -->
+            <li class="">&nbsp&nbsp</li>
+            <li class="wide-menu text-center" id="bus-search-menu-item"><a href="#">Buses</a></li>
+          </ul>
+          </div>
+          <div class="row">
+          <div class="large-8 medium-12 columns">
+         <form class="flight-search-form" >
+          <div class="row">
+             <div class="medium-4 small-12 columns radio medium-offset-1" style="margin-top: 10px;">
+                <label></label>
+                <input type="radio" name="tripType" checked=""> :- One Way &nbsp;
+                <input type="radio" name="tripType"> :- Return
+            </div> 
+          </div>
+        <div class="row">
+          <div class="medium-5 small-12 medium-offset-1 columns" >
+            <label>Fly From:</label>
+            <input type="text" name="" placeholder="Type a City or Airport">
+          </div>
+          <div class="medium-5 small-12 columns">
+            <label>Fly To:</label>
+            <input type="text" name="" placeholder="Type a City or Airport">
+          </div>
+          
+        </div>
+        
+        <div class="row">
+
+          <div class="medium-5 small-12 medium-offset-1 columns" >
+            <label>Departure:</label>
+            <input type="date" name="" >
+          </div>
+          <div class="medium-5 small-12 columns">
+            <label >Return:</label>
+            <input type="date" name="" >
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="medium-2 small-6 medium-offset-1 columns ">
+            <label>Children</label>
+            <select>
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div>
+        
+      
+          <div class="medium-2 small-6 columns">
+            <label>Infants</label>
+            <select>
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div>
+      
+          <div class="medium-2 small-6 columns">
+            <label>Adults</label>
+            <select>
+              
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div> 
+          <div class="medium-3 small-6 columns">
+            <label>Class</label>
+            <select>
+              <option>Economy</option>
+              <option>Business</option>
+              <option>First</option>
+            </select>
+          </div>
+          <div class="medium-2 columns"></div>
+        </div>
+        <div class="row">
+          <div class="medium-3  columns medium-offset-1">
+            <label>
+             <button type="button" class="button"><i class="fi-magnifying-glass">Search</i></button>
+           </label>
+          </div>
+          <div class="medium-4 columns"></div>
+        </div>
+        </form> <!--flight form ends here-->
+
+        <form class="bus-search-form hide" >
+        <div class="row">
+          <div class="medium-8 columns radio medium-offset-1" style="padding-top:10px">
+              <!-- <label>Choose Trip Type</label> -->
+              <input type="radio" name="tripType" checked=""> :- Return  &nbsp;
+              <input type="radio" name="tripType"> :- One Way &nbsp;
+              <!-- <input type="radio" name="tripType"> :- Multiple destinations -->
+          </div> 
+        </div>
+         
+        <div class="row">
+          <div class="medium-5 medium-offset-1 columns" >
+            <label>From:</label>
+            <input type="text" name="" placeholder="Type a City">
+          </div>
+          <div class="medium-5 columns">
+            <label>Fly To:</label>
+            <input type="text" name="" placeholder="Type a City">
+          </div>
+          
+        </div>
+        
+        <div class="row">
+
+          <div class="medium-5 medium-offset-1 columns" >
+            <label>Departure:</label>
+            <input type="date" name="" >
+          </div>
+          <div class="medium-5 columns">
+            <label >Return:</label>
+            <input type="date" name="" >
+          </div>
+          
+        </div>
+        <div class="row">
+          <!-- <div class="medium-2 medium-offset-1 columns ">
+            <label>Children</label>
+            <select>
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div>
+        
+      
+          <div class="medium-2 columns">
+            <label>Infants</label>
+            <select>
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div>
+      
+          <div class="medium-2 columns">
+            <label>Adults</label>
+            <select>
+              
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div>  
+          <div class="medium-3 columns">
+            <label>Class</label>
+            <select>
+              <option>Economy</option>
+              <option>Business</option>
+              <option>First</option>
+            </select>
+          </div>-->
+          <div class="medium-2 columns"></div>
+        </div>
+        <div class="row">
+          
+          
+          <div class="medium-3  medium-offset-1 columns">
+            <label>
+             <button type="button" class="button"><i class="fi-magnifying-glass">Search</i></button>
+           </label>
+          </div>
+          <!-- <div class="medium-4 columns"></div> -->
+        </div>
+        </form> <!--Bus form ends here-->
+        
+        <form class="hotels-search-form hide"> <!-- Hotels form begins here -->
+       
+        <div class="row">
+          <div class="medium-11 medium-offset-1 columns" >
+            <label>Destination:</label>
+            <input type="text" name="" placeholder="Destination, City or Hotel name">
+          </div>
+          
+        </div>
+        
+        <div class="row">
+
+          <div class="medium-5 medium-offset-1 columns" >
+            <label>Check In:</label>
+            <input type="date" name="" >
+          </div>
+          <div class="medium-5 columns">
+            <label >Check Out:</label>
+            <input type="date" name="" >
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="medium-2 medium-offset-1 columns ">
+            <label>Rooms</label>
+            <select>
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div>
+        
+      
+          <div class="medium-2 columns">
+            <label>Children</label>
+            <select>
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div>
+      
+          <div class="medium-2 columns">
+            <label>Adults</label>
+            <select>
+              
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div> 
+      
+          <div class="medium-5 columns"></div>
+        </div>
+        <div class="row"> 
+          
+          <div class="medium-7  columns medium-offset-1">
+            <label>
+             <button type="button" class="button"><i class="fi-magnifying-glass">Search</i></button>
+           </label>
+          </div>
+          <div class="medium-4 columns"></div>
+        </div>
+        </form> <!-- Hotels form ends here -->
+
+          </div>
+           <div class="medium-4 float-right text-center show-for-large" style="background: white; ">
+            <p>Advertisement</p>
+          </div>
+          </div>
+         
+        </div>
+        </div><!--/.Search-form -->
       </div>
+<!-- Search Form ends here -->
+    </div> 
+      </div><!-- ./top-header -->
+      <!-- top-header ends here -->
+
+
+     <div class="list-wrapper">
+      <div class="offer-list-medium row">
+        <div id="local-flight-list">
+        <div class="row">
+          <div class="medium-12 text-center" id="flight-list-header">
+            <span>Discover Trending Local Flight Deals</span>
+          </div>
+        </div>
+        <div class="row "> <!-- offer set begins here-->
+          <div class="medium-3 columns offer"><a href="#">
+            <div class="offer-header text-center">
+              <span class="offer-departure">Accra</span><br>
+              <span class="offer-destination">Kumasi</span> 
+            </div>
+            <div class="offer-details text-center">
+              <span class="offer-type">Round Trip From</span><br>
+              <span class="offer-price">GHS 2,500.00</span><br>
+              <span class="offer-state">* Subject to Availability</span><br>
+              <span class="airline"><img src="img/logos/starbow.png"></span>
+            </div>
+          </div></a>
+           <div class="medium-3 columns offer"><a href="#">
+            <div class="offer-header text-center">
+              <span class="offer-departure">Accra(ACC)</span><br>
+              <span class="offer-destination">Tamale</span> 
+            </div>
+            <div class="offer-details text-center">
+              <span class="offer-type">Round Trip From</span><br>
+              <span class="offer-price">GHS 2,500.00</span><br>
+              <span class="offer-state">* Subject to Availability</span><br>
+              <span class="airline"><img src="img/logos/starbow.png"></span>
+            </div>
+          </div></a>
+           <div class="medium-3 columns offer"><a href="#">
+            <div class="offer-header text-center">
+              <span class="offer-departure">Accra(ACC)</span><br>
+              <span class="offer-destination">Takoradi</span> 
+            </div>
+            <div class="offer-details text-center">
+              <span class="offer-type">Round Trip From</span><br>
+              <span class="offer-price">GHS 2,500.00</span><br>
+              <span class="offer-state">* Subject to Availability</span><br>
+              <span class="airline"><img src="img/logos/starbow.png"></span>
+            </div>
+          </div></a>
+           <div class="medium-3 columns offer"><a href="#">
+            <div class="offer-header text-center">
+              <span class="offer-departure">Kumasi</span><br>
+              <span class="offer-destination">Tamale</span> 
+            </div>
+            <div class="offer-details text-center">
+              <span class="offer-type">Round Trip From</span><br>
+              <span class="offer-price">GHS 2,500.00</span><br>
+              <span class="offer-state">* Subject to Availability</span><br>
+              <span class="airline"><img src="img/logos/starbow.png"></span>
+            </div>
+          </div></a>
+        </div> <!--offer set ends here-->
+
+        <div class="row "> <!-- offer set begins here-->
+          <div class="medium-3 columns offer">
+            <div class="offer-header text-center">
+              <span class="offer-departure">Tamale</span><br>
+              <span class="offer-destination">Takoradi</span> 
+            </div>
+            <div class="offer-details text-center">
+              <span class="offer-type">Round Trip From</span><br>
+              <span class="offer-price">GHS 2,500.00</span><br>
+              <span class="offer-state">* Subject to Availability</span><br>
+              <span class="airline"><img src="img/logos/africaworld.png"></span>
+            </div>
+          </div>
+           <div class="medium-3 columns offer">
+            <div class="offer-header text-center">
+              <span class="offer-departure">Accra(ACC)</span><br>
+              <span class="offer-destination">Wa</span> 
+            </div>
+            <div class="offer-details text-center">
+              <span class="offer-type">Round Trip From</span><br>
+              <span class="offer-price">GHS 2,500.00</span><br>
+              <span class="offer-state">* Subject to Availability</span><br>
+              <span class="airline"><img src="img/logos/africaworld.png"></span>
+            </div>
+          </div>
+           <div class="medium-3 columns offer">
+            <div class="offer-header text-center">
+              <span class="offer-departure">Accra(ACC)</span><br>
+              <span class="offer-destination">Cheriponi</span> 
+            </div>
+            <div class="offer-details text-center">
+              <span class="offer-type">Round Trip From</span><br>
+              <span class="offer-price">GHS 2,500.00</span><br>
+              <span class="offer-state">* Subject to Availability</span><br>
+              <span class="airline"><img src="img/logos/africaworld.png"></span>
+            </div>
+          </div>
+           <div class="medium-3 columns offer">
+            <div class="offer-header text-center">
+              <span class="offer-departure">Accra(ACC)</span><br>
+              <span class="offer-destination">Bolga</span> 
+            </div>
+            <div class="offer-details text-center">
+              <span class="offer-type">Round Trip From</span><br>
+              <span class="offer-price">GHS 2,500.00</span><br>
+              <span class="offer-state">* Subject to Availability</span><br>
+              <span class="airline"><img src="img/logos/africaworld.png"></span>
+            </div>
+          </div>
+        </div> <!--offer set ends here-->
+        </div> <!--/#local flight-list ends here-->
+
+       
+
+         
+
+      </div><!-- /.Offer list ends here -->
+
+      </div><!-- /.Offer list ends here -->
+
+      </div><!--List wrapper ends here-->
+
+   
+
            
      <footer>
        <div class="row">
