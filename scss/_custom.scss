@@ -80,18 +80,28 @@ div#signup-page{
 
 
 div.top-header{
+    height: rem-calc(700);
+    @include breakpoint(medium large){
+        height: rem-calc(550);
+    }
+    @include breakpoint(xlarge){
+        height: rem-calc(800);
+    }
         #big-banner{
             position: relative;
         }
     .search-section{
             position: absolute;
-            top: 50%;
+            top: 25%;
             left:0;
             width: 100%;
-            transform: translateY(-25%);
-
+            @include breakpoint(xlarge){
+                top: 40%;
+            }
+            
     }
 	    div.search-form{
+            
             border-radius: rem-calc(25);
 	 	    background: transparent;
 	 	    opacity: 0.9;
