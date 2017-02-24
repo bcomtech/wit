@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html  lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -33,7 +33,7 @@
     </div>
       </div>
       <div class="top-bar hide-for-xlarge">
-      <a class="menu-icon" href="#" data-toggle="small-menu"></a>
+      <a class="menu-icon"  href="#" data-toggle="offCanvasMenuLeft"></a>
       <div class="float-right account-items" >
         <a data-open="login-page">Login</a>
         <a data-open="signup-page">sign up</a>
@@ -41,8 +41,12 @@
     
 
     </div>
-        <div class=" small-12 columns">
-              <div class="dropdown-pane" id="small-menu" data-dropdown data-auto-focus="true">
+              <div class="off-canvas position-left" id="offCanvasMenuLeft" data-off-canvas data-transition="overlap">
+                  <!-- Close button -->
+                  <button class="close-button" aria-label="Close menu" type="button" data-close>
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+                  <!-- Menu -->
                <ul class="menu vertical">
                  <li><a href="">Flight</a></li>
                  <li><a href="">Hotels</a></li>
@@ -51,10 +55,12 @@
                  <li><a href="">Tour Packages</a></li>
                </ul>
               </div>
-          </div> 
-      <div class="top-header" style="font-color: #34444e;">
 
-         <div class=" top-bar show-for-xlarge "  >
+          <div class="off-canvas-content" data-off-canvas-content>
+
+                <div class="top-header" style="font-color: #34444e;">
+
+                <div class=" top-bar show-for-xlarge " >
           <div class="medium-4 columns">
             <ul class="menu ">
               <li class=""><a href="#">Flight</a></li>
@@ -73,7 +79,7 @@
           </div>
           
           </div> <!--/.top-menu-->
-          <div class="row contact-us-button text-right show-for-medium " >
+          <div class="row contact-us-button text-right show-for-xlarge" >
             <a data-open="Contact-us-page"><img class="medium-12 columns" src="img/contact-us.png"></a>
           </div>
 
@@ -339,7 +345,7 @@
 
           <div class="row large-8 medium-12 columns">
           <ul class="menu columns">
-            <li class="wide-menu is-active text-center" id="flight-search-menu-item"><a href="#">Flight</a></li>
+            <li class="wide-menu active text-center" id="flight-search-menu-item"><a href="#">Flight</a></li>
             <li class="">&nbsp&nbsp</li>
             <!-- <li class="wide-menu text-center" id="hotel-search-menu-item"><a href="#">Hotels</a></li> -->
             <li class="">&nbsp&nbsp</li>
@@ -352,18 +358,18 @@
           <div class="row">
              <div class="medium-4 small-12 columns radio medium-offset-1" style="margin-top: 10px;">
                 <label></label>
-                <input type="radio" name="tripType" checked=""> :- One Way &nbsp;
-                <input type="radio" name="tripType"> :- Return
+                <input type="radio" name="tripType" checked=""> :- Return &nbsp;
+                <input type="radio" name="tripType"> :- One Way
             </div> 
           </div>
         <div class="row">
           <div class="medium-5 small-12 medium-offset-1 columns" >
             <label>Fly From:</label>
-            <input type="text" name="" placeholder="Type a City or Airport">
+            <input type="text" name="flyfrom"id="flyfrom" placeholder="Type a City or Airport">
           </div>
           <div class="medium-5 small-12 columns">
             <label>Fly To:</label>
-            <input type="text" name="" placeholder="Type a City or Airport">
+            <input type="text" name="flyto" id="flyto" placeholder="Type a City or Airport">
           </div>
           
         </div>
@@ -372,18 +378,18 @@
 
           <div class="medium-5 small-12 medium-offset-1 columns" >
             <label>Departure:</label>
-            <input type="date" name="" >
+            <input type="date" name="flightdeparture" id="flightdeparture">
           </div>
           <div class="medium-5 small-12 columns">
             <label >Return:</label>
-            <input type="date" name="" >
+            <input type="date" name="flightreturn" id="flightreturn">
           </div>
           
         </div>
         <div class="row">
           <div class="medium-2 small-6 medium-offset-1 columns ">
             <label>Children</label>
-            <select>
+            <select name="flightchildren" id="flightchildren">
               <option>0</option>
               <option>1</option>
               <option>2</option>
@@ -397,7 +403,7 @@
       
           <div class="medium-2 small-6 columns">
             <label>Infants</label>
-            <select>
+            <select name="flightinfacnts" id=flightinfants">
               <option>0</option>
               <option>1</option>
               <option>2</option>
@@ -410,7 +416,7 @@
       
           <div class="medium-2 small-6 columns">
             <label>Adults</label>
-            <select>
+            <select name="flightadults" id="flightadults">
               
               <option>1</option>
               <option>2</option>
@@ -422,7 +428,7 @@
           </div> 
           <div class="medium-3 small-6 columns">
             <label>Class</label>
-            <select>
+            <select name="flightclass" id="flightclass">
               <option>Economy</option>
               <option>Business</option>
               <option>First</option>
@@ -433,7 +439,7 @@
         <div class="row">
           <div class="medium-3  columns medium-offset-1">
             <label>
-             <button type="button" class="button"><i class="fi-magnifying-glass">Search</i></button>
+             <button type="button" class="button" id="flightsearchbutton"><i class="fi-magnifying-glass">Search</i></button>
            </label>
           </div>
           <div class="medium-4 columns"></div>
@@ -444,8 +450,8 @@
         <div class="row">
           <div class="medium-8 columns radio medium-offset-1" style="padding-top:10px">
               <!-- <label>Choose Trip Type</label> -->
-              <input type="radio" name="tripType" checked=""> :- Return  &nbsp;
-              <input type="radio" name="tripType"> :- One Way &nbsp;
+              <input type="radio" id="returnradio" name="tripType" checked=""> :- Return  &nbsp;
+              <input type="radio" id="onewayradio" name="tripType"> :- One Way &nbsp;
               <!-- <input type="radio" name="tripType"> :- Multiple destinations -->
           </div> 
         </div>
@@ -453,11 +459,11 @@
         <div class="row">
           <div class="medium-5 medium-offset-1 columns" >
             <label>From:</label>
-            <input type="text" name="" placeholder="Type a City">
+            <input type="text" id="busfrom" name="busfrom" placeholder="Type a City">
           </div>
           <div class="medium-5 columns">
-            <label>Fly To:</label>
-            <input type="text" name="" placeholder="Type a City">
+            <label>Travel To:</label>
+            <input type="text" name="busto" id="busto" placeholder="Type a City">
           </div>
           
         </div>
@@ -466,70 +472,23 @@
 
           <div class="medium-5 medium-offset-1 columns" >
             <label>Departure:</label>
-            <input type="date" name="" >
+            <input type="date" name="busdeparture" id="busdeparture" >
           </div>
           <div class="medium-5 columns">
             <label >Return:</label>
-            <input type="date" name="" >
+            <input type="date" name="busreturn" id="busreturn">
           </div>
           
         </div>
         <div class="row">
-          <!-- <div class="medium-2 medium-offset-1 columns ">
-            <label>Children</label>
-            <select>
-              <option>0</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-            </select>
-          </div>
-        
-      
-          <div class="medium-2 columns">
-            <label>Infants</label>
-            <select>
-              <option>0</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-            </select>
-          </div>
-      
-          <div class="medium-2 columns">
-            <label>Adults</label>
-            <select>
-              
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-            </select>
-          </div>  
-          <div class="medium-3 columns">
-            <label>Class</label>
-            <select>
-              <option>Economy</option>
-              <option>Business</option>
-              <option>First</option>
-            </select>
-          </div>-->
-          <div class="medium-2 columns"></div>
+            <div class="medium-2 columns"></div>
         </div>
         <div class="row">
           
           
           <div class="medium-3  medium-offset-1 columns">
             <label>
-             <button type="button" class="button"><i class="fi-magnifying-glass">Search</i></button>
+             <button type="button" class="button" id="busbutton"><i class="fi-magnifying-glass">Search</i></button>
            </label>
           </div>
           <!-- <div class="medium-4 columns"></div> -->
@@ -795,6 +754,9 @@
        <p class="text-center copyright">All rights reserved</p>
      </footer>
 
+
+          </div><!-- ./off-canvas-content -->
+      
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>

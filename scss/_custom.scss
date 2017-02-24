@@ -37,6 +37,10 @@ div.top-menu{
 div.top-bar{
 		background: #333333;
 		z-index: -1;
+        ul li a{
+
+            font: italic bold 18px/30px Georgia serif;
+        }
 		
 	}
 .top-bar ul{
@@ -59,9 +63,8 @@ div.dropdown-pane{
 div.contact-us-button{
 	position: fixed; 
 	z-index: 1;
-	@include breakpoint(medium){
-		right: rem-calc(0);
-	} 
+
+ 
 	@include breakpoint(xlarge){
 		right: rem-calc(-25);
 	} 
@@ -77,8 +80,13 @@ div.contact-us-button{
 div#signup-page{
 	color: black;
 }
+div.top-header div.search-form ul.menu li.active a {
+    color: #fefefe;
+    background: #333333;
+    border-top-right-radius: rem-calc(15);
+ 	border-top-left-radius: rem-calc(15);
 
-
+}
 div.top-header{
     height: rem-calc(700);
     @include breakpoint(medium large){
@@ -96,12 +104,12 @@ div.top-header{
             left:0;
             width: 100%;
             @include breakpoint(xlarge){
+                font-size: rem-calc(18);
                 top: 40%;
             }
             
     }
 	    div.search-form{
-            
             border-radius: rem-calc(25);
 	 	    background: transparent;
 	 	    opacity: 0.9;
@@ -124,7 +132,7 @@ div.top-header{
  					margin-top: rem-calc(20);
 
  			    }   
- 			    > li.active{
+ 			   li.active{
 				    background: #333333;
 				    a{
 					    color: $white;
@@ -136,7 +144,6 @@ div.top-header{
  		    form{
  			    background: #333333;
  			    color: #ffc600;
-
  			    border-top-right-radius: rem-calc(5);
  			    border-bottom-left-radius: rem-calc(5);
  			    border-bottom-right-radius: rem-calc(5);
@@ -149,6 +156,9 @@ div.top-header{
  			    label{
  				    color: #ffc600;
  				    font: italic bold 14px/30px Georgia, serif;
+                    @include breakpoint(xlarge){
+                        font: italic bold 18px/30px Georgia, serif;
+                    }
 
  			    }
  			    button{
