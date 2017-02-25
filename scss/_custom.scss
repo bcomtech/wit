@@ -35,8 +35,11 @@ div.top-menu{
 
 }
 div.top-bar{
-		background: #333333;
-		z-index: -1;
+		background: $primary-color;
+        ul li a{
+
+            font: italic bold 18px/30px Georgia serif;
+        }
 		
 	}
 .top-bar ul{
@@ -50,18 +53,28 @@ div.top-bar{
 	}
 }
 
-div.dropdown-pane{
-	ul > li:hover{
-		background: #aee2df;
-	}
+.off-canvas ul li{
+    border: 1px solid $primary-color;
+   a{
+        color: $white;
+    }
+    a:hover{
+        background: $primary-color;
+    }
 }
+.off-canvas{
+    background: lighten($primary-color, 20%);
+}
+.touch-canvas:hover, .touch-canvas:active{
+    background: $primary-color;
+}
+
 
 div.contact-us-button{
 	position: fixed; 
 	z-index: 1;
-	@include breakpoint(medium){
-		right: rem-calc(0);
-	} 
+
+ 
 	@include breakpoint(xlarge){
 		right: rem-calc(-25);
 	} 
@@ -77,34 +90,55 @@ div.contact-us-button{
 div#signup-page{
 	color: black;
 }
+div.top-header div.search-form ul.menu li.active a {
+    color: #fefefe;
+    background: $primary-color;
+    border-top-right-radius: rem-calc(15);
+ 	border-top-left-radius: rem-calc(15);
 
-
+}
 div.top-header{
-    height: rem-calc(700);
+    
+   /* 
     @include breakpoint(medium large){
         height: rem-calc(550);
     }
     @include breakpoint(xlarge){
-        height: rem-calc(800);
-    }
+        height: 50%;
+
+    }*/
+   
         #big-banner{
             position: relative;
         }
     .search-section{
             position: absolute;
-            top: 25%;
+            top: 22%;
             left:0;
             width: 100%;
-            @include breakpoint(xlarge){
+            @include breakpoint(medium){
+                @include breakpoint(landscape){
+                    top: 47%;
+                }
+            }
+            @include breakpoint(large){
                 top: 40%;
             }
-            
+            @include breakpoint(xlarge){
+                font-size: rem-calc(18);
+                top: 40%;
+            }
+                        
     }
 	    div.search-form{
-            
             border-radius: rem-calc(25);
 	 	    background: transparent;
 	 	    opacity: 0.9;
+            div label{
+            @include breakpoint(medium down){
+                display:none;
+            }
+        }
            
  		    ul.menu{
  			    padding: rem-calc(0);
@@ -120,12 +154,12 @@ div.top-header{
  			    } 
  			    > li.wide-menu{
  					width: rem-calc(200);
- 					background: darken(#eeede9,1%);
+ 					background: darken($secondary-color,1%);
  					margin-top: rem-calc(20);
 
  			    }   
- 			    > li.active{
-				    background: #333333;
+ 			   li.active{
+				    background: $primary-color;
 				    a{
 					    color: $white;
 				    }
@@ -134,9 +168,8 @@ div.top-header{
  			
  		    }   
  		    form{
- 			    background: #333333;
+ 			    background: $primary-color;
  			    color: #ffc600;
-
  			    border-top-right-radius: rem-calc(5);
  			    border-bottom-left-radius: rem-calc(5);
  			    border-bottom-right-radius: rem-calc(5);
@@ -149,10 +182,17 @@ div.top-header{
  			    label{
  				    color: #ffc600;
  				    font: italic bold 14px/30px Georgia, serif;
+                    
 
  			    }
+                select{
+                    border-radius: rem-calc(5);
+                }
+
  			    button{
- 				    background: #ffc600;
+ 				    background: darken($gold, 5%);
+                    font: italic bold 16px Georgia serif;
+                    border-radius: rem-calc(5);
  			}
  		}
 
@@ -195,6 +235,7 @@ div.list-wrapper{
 }
 div.offer-list-medium{
 	margin-bottom: rem-calc(50);
+    
 	color: $black;
 	border-radius: rem-calc(15);
 
@@ -204,18 +245,18 @@ div.offer-list-medium{
 	div.offer{
 		margin-bottom: rem-calc(20);
 		div.offer-header{
-			color: #000000;
-			background: #eeede9;
-			border: solid 1px #000000;
+			color: $black;
+			background: $secondary-color;
+			border: solid 1px $black;
 			border-top-right-radius: rem-calc(15);
 	 		border-top-left-radius: rem-calc(15);
 	 		font: italic bold 18px/30px Georgia, serif;
 		}
 		div.offer-details{
-			background: #eeede9;
-			border-bottom: solid 1px #000000;
-			border-right: solid 1px #000000;
-			border-left: solid 1px #000000;
+			background: $secondary-color;
+			border-bottom: solid 1px $black;
+			border-right: solid 1px $black;
+			border-left: solid 1px $black;
 			border-bottom-right-radius: rem-calc(15);
 	 		border-bottom-left-radius: rem-calc(15);
 
@@ -248,7 +289,7 @@ div.offer-list-medium{
 footer {
 	background-color: $secondary-color;
 	padding-top:rem-calc(30);
-	color: #000000;
+	color: $black;
 
 	.menu{
 		a {
@@ -285,12 +326,12 @@ footer {
 	.social {
 		i {
 			font-size: rem-calc(60);
-			color: #000000;
+			color: $black;
 		}
 	}
 	p.copyright {
 		padding: rem-calc(20 0);
-		background-color: #333333;
+		background-color: $primary-color;
 		color: $white;
 		margin:0;
 	}
