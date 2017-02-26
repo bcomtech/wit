@@ -1,0 +1,295 @@
+body{
+    background: url('../img/bg1.png');
+	background: url('../img/bodybg.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+div.orbit{
+	margin-bottom: rem-calc(15)
+}
+
+div.top-menu{
+	.menu{
+		top:rem-calc(10); 
+		border-radius: rem-calc(25);
+		
+	> li{
+	
+		> a{
+
+			display: block;
+		    padding: 0.7rem 1rem;
+		    line-height: 1;
+		    color: darken(#e50e1b, 40%);
+		    text-transform: uppercase;
+		    font-size: rem-calc(14);
+		    font-weight: bold;
+		   }
+  
+    	:hover{
+    	color: #fff;
+    	}
+  	  }
+ 	}
+
+}
+div.top-bar{
+		background: #333333;
+		z-index: -1;
+		
+	}
+.top-bar ul{
+	background: transparent;
+	li{
+		a{
+			color: #ffc600;
+			font: italic bold 14px/30px Georgia, serif;
+
+		}
+	}
+}
+
+div.dropdown-pane{
+	ul > li:hover{
+		background: #aee2df;
+	}
+}
+
+div.contact-us-button{
+	position: fixed; 
+	z-index: 1;
+	@include breakpoint(medium){
+		right: rem-calc(0);
+	} 
+	@include breakpoint(xlarge){
+		right: rem-calc(-25);
+	} 
+	 
+	
+}
+
+.reveal{
+	background: $secondary-color;
+	border-radius: rem-calc(5);
+}
+
+div#signup-page{
+	height: rem-calc(1500);
+	color: black;
+}
+
+
+div.top-header{
+	
+	div.search-form{
+		border-radius: rem-calc(25);
+	 	background: transparent;
+	 	opacity: 0.9;
+
+	 	@include breakpoint(small){
+	 		margin-top: rem-calc(-115);
+
+	 	}
+	 	@include breakpoint(medium){
+	 	   margin-top: rem-calc(-260);
+	 	}
+	 	@include breakpoint(large){
+	 		margin-top: rem-calc(-410);
+	 	}
+	 	@include breakpoint(xlarge){
+	 		margin-top: rem-calc(-520);
+	 	}
+	 
+
+ 		ul.menu{
+ 			padding: rem-calc(0);
+
+ 			> li{
+
+ 				border-top-right-radius: rem-calc(15);
+ 				border-top-left-radius: rem-calc(15);
+ 				> a {
+    				font-weight: bold;
+    				color: #34444e;
+					}
+ 			} 
+ 			> li.wide-menu{
+ 					width: rem-calc(200);
+ 					background: darken(#eeede9,1%);
+ 					margin-top: rem-calc(20);
+
+ 			}
+ 			> li.active{
+				background: #333333;
+				a{
+					color: $white;
+				}
+				
+				}
+ 			
+ 		}
+ 		form{
+ 			background: #333333;
+ 			color: #ffc600;
+
+ 			border-top-right-radius: rem-calc(5);
+ 			border-bottom-left-radius: rem-calc(5);
+ 			border-bottom-right-radius: rem-calc(5);
+ 			padding: rem-calc(0 10);
+ 			input{
+ 				background: $white;
+ 				color: black;
+ 				border-radius: rem-calc(5);
+ 			}
+ 			label{
+ 				color: #ffc600;
+ 				font: italic bold 14px/30px Georgia, serif;
+
+ 			}
+ 			button{
+ 				background: #ffc600;
+ 			}
+ 		}
+
+ 		
+	}
+}
+
+.menu-icon{
+	margin: rem-calc(10);
+	width: rem-calc(40);
+	
+}
+.menu-icon:hover{
+	background-color: $black;
+  background-position: -192px -96px;
+}
+div.account-items{
+	margin: 8px;
+	a{
+		margin-right: rem-calc(10);
+		color: $white;
+		font-weight: bold;
+	}
+	a:hover{
+			color: gray;
+		}
+}
+
+div.search-advert{
+ 			background: transparent; 
+ 			height: 310px; 
+ 			margin-top: 130px; 
+ 			
+
+ 		}
+
+div.list-wrapper{
+	background: $white;
+	
+}
+div.offer-list-medium{
+	margin-bottom: rem-calc(50);
+	color: $black;
+	border-radius: rem-calc(15);
+
+	div.row{
+		margin: rem-calc(0)
+	}
+	div.offer{
+		margin-bottom: rem-calc(20);
+		div.offer-header{
+			color: #000000;
+			background: #eeede9;
+			border: solid 1px #000000;
+			border-top-right-radius: rem-calc(15);
+	 		border-top-left-radius: rem-calc(15);
+	 		font: italic bold 18px/30px Georgia, serif;
+		}
+		div.offer-details{
+			background: #eeede9;
+			border-bottom: solid 1px #000000;
+			border-right: solid 1px #000000;
+			border-left: solid 1px #000000;
+			border-bottom-right-radius: rem-calc(15);
+	 		border-bottom-left-radius: rem-calc(15);
+
+	 		span.offer-type{
+	 			text-transform: uppercase;
+	 			font: bold 16px/30px Georgia, serif;
+	 		}
+	 		span.offer-price{
+	 		 font: bold 18px/30px Georgia, serif;
+	 		 color: red;
+	 		}
+	 		span.offer-state{
+	 			font: bold 14px/30px Georgia, serif;
+	 			color: green;
+	 		}
+		}
+
+	}
+	#flight-list-header{
+		margin: rem-calc(20);
+		font: italic bold 24px/30px Georgia, serif;
+		color: $black;
+	}
+	#international-flight-list{
+		margin: rem-calc(50 0);
+	}
+	
+}
+
+footer {
+	background-color: $secondary-color;
+	padding-top:rem-calc(30);
+	color: #000000;
+
+	.menu{
+		a {
+			color:$black;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		li{
+			:hover{
+				color: blue;
+			}
+		}
+	}
+	.contact-information {
+		li {
+			position: relative;
+			height: 100px;
+			padding-left: 60px;
+			padding-top:35px;
+ 
+			&:first-child{
+			padding-top: 22px;
+			}
+			i{
+				font-size: rem-calc(60);
+				position: absolute;
+				top:0;
+				left:0; 
+			} 
+		}
+
+		
+	}
+	.social {
+		i {
+			font-size: rem-calc(60);
+			color: #000000;
+		}
+	}
+	p.copyright {
+		padding: rem-calc(20 0);
+		background-color: #333333;
+		color: $white;
+		margin:0;
+	}
+ 
+}
+

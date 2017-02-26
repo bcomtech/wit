@@ -1,0 +1,354 @@
+body{
+	background: url('../img/bodybg.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+div.orbit{
+	margin-bottom: rem-calc(15)
+}
+
+div.top-menu{
+	.menu{
+		top:rem-calc(10); 
+		border-radius: rem-calc(25);
+		
+	> li{
+	
+		> a{
+
+			display: block;
+		    padding: 0.7rem 1rem;
+		    line-height: 1;
+		    color: darken(#e50e1b, 40%);
+		    text-transform: uppercase;
+		    font-size: rem-calc(14);
+		    font-weight: bold;
+		   }
+  
+    	:hover{
+    	color: #fff;
+    	}
+  	  }
+ 	}
+
+}
+div.top-bar{
+		background: $primary-color;
+        ul li a{
+
+            font: italic bold 18px/30px Georgia serif;
+        }
+		
+	}
+.top-bar ul{
+	background: transparent;
+	li{
+		a{
+			color: #ffc600;
+			font: italic bold 14px/30px Georgia, serif;
+
+		}
+	}
+}
+
+.off-canvas ul li{
+    border: 1px solid $primary-color;
+   a{
+        color: $white;
+    }
+    a:hover{
+        background: $primary-color;
+    }
+}
+.off-canvas{
+    background: lighten($primary-color, 20%);
+}
+.touch-canvas:hover, .touch-canvas:active{
+    background: $primary-color;
+}
+
+
+div.contact-us-button{
+	position: fixed; 
+	z-index: 1;
+
+ 
+	@include breakpoint(xlarge){
+		right: rem-calc(-25);
+	} 
+	 
+	
+}
+
+.reveal{
+	background: $secondary-color;
+	border-radius: rem-calc(5);
+}
+
+div#signup-page{
+	color: black;
+}
+div.top-header div.search-form ul.menu li.active a {
+    color: #fefefe;
+    background: $primary-color;
+    border-top-right-radius: rem-calc(15);
+ 	border-top-left-radius: rem-calc(15);
+
+}
+
+input::-webkit-input-placeholder {
+    color: $primary-color;
+    font: solid 14px Georgia;
+}
+
+input::-moz-placeholder {
+    color: $primary-color;
+    font: solid 14px Georgia;
+}
+
+input::-ms-input-placeholder{
+    color: $primary-color;
+    font: solid 14px Georgia;
+}
+
+div.top-header{
+    
+   /* 
+    @include breakpoint(medium large){
+        height: rem-calc(550);
+    }
+    @include breakpoint(xlarge){
+        height: 50%;
+
+    }*/
+   
+        #big-banner{
+            position: relative;
+        }
+    .search-section{
+            position: absolute;
+            top: 22%;
+            left:0;
+            width: 100%;
+            @include breakpoint(medium){
+                @include breakpoint(landscape){
+                    top: 47%;
+                }
+            }
+            @include breakpoint(large){
+                top: 40%;
+            }
+            @include breakpoint(xlarge){
+                font-size: rem-calc(18);
+                top: 40%;
+            }
+                        
+    }
+	    div.search-form{
+            opacity: 0.9;
+
+            border-radius: rem-calc(25);
+ 		    ul.menu{
+ 			    padding: rem-calc(0);
+
+ 			    > li{
+
+ 				    border-top-right-radius: rem-calc(15);
+ 				    border-top-left-radius: rem-calc(15);
+ 				    > a {
+    				    font-weight: bold;
+    				    color: #34444e;
+					    }
+ 			    } 
+ 			    > li.wide-menu{
+ 					width: rem-calc(200);
+ 					background: darken($secondary-color,1%);
+ 					margin-top: rem-calc(20);
+
+ 			    }   
+ 			   li.active{
+				    background: $primary-color;
+				    a{
+					    color: $white;
+				    }
+				
+				}
+ 			
+ 		    }   
+ 		    form{
+                
+                background: $primary-color;
+ 			    color: #ffc600;
+ 			    border-top-right-radius: rem-calc(5);
+ 			    border-bottom-left-radius: rem-calc(5);
+ 			    border-bottom-right-radius: rem-calc(5);
+ 			    padding: rem-calc(0 10);
+ 			    input{
+                    height: rem-calc(38);
+ 				    color: black;
+ 				    border-radius: rem-calc(5);
+                    padding: rem-calc(0);
+                    margin-bottom: rem-calc(5);
+ 			    }
+               
+ 			    label{
+ 				    color: #ffc600;
+ 				    font: italic bold 14px/30px Georgia, serif;
+ 			    }
+                select{
+                    height: rem-calc(38);
+                    border-radius: rem-calc(5);
+                    font-size: rem-calc(14);
+                }
+
+ 			    button{
+ 				    background: darken($gold, 5%);
+                    font: italic bold 16px Georgia serif;
+                    height: rem-calc(40);
+                    border-radius: rem-calc(5);
+ 			}
+ 		}
+
+ 		
+	}
+}
+
+.menu-icon{
+	margin: rem-calc(10);
+	width: rem-calc(40);
+	
+}
+.menu-icon:hover{
+	background-color: $black;
+  background-position: -192px -96px;
+}
+div.account-items{
+	margin: 8px;
+	a{
+		margin-right: rem-calc(10);
+		color: $white;
+		font-weight: bold;
+	}
+	a:hover{
+			color: gray;
+		}
+}
+
+div.search-advert{
+ 			background: transparent; 
+ 			height: 310px; 
+ 			margin-top: 130px; 
+ 			
+
+ 		}
+
+div.list-wrapper{
+	background: $white;
+	
+}
+div.offer-list-medium{
+	margin-bottom: rem-calc(50);
+    
+	color: $black;
+	border-radius: rem-calc(15);
+
+	div.row{
+		margin: rem-calc(0)
+	}
+	div.offer{
+		margin-bottom: rem-calc(20);
+		div.offer-header{
+			color: $black;
+			background: $secondary-color;
+			border: solid 1px $black;
+			border-top-right-radius: rem-calc(15);
+	 		border-top-left-radius: rem-calc(15);
+	 		font: italic bold 18px/30px Georgia, serif;
+		}
+		div.offer-details{
+			background: $secondary-color;
+			border-bottom: solid 1px $black;
+			border-right: solid 1px $black;
+			border-left: solid 1px $black;
+			border-bottom-right-radius: rem-calc(15);
+	 		border-bottom-left-radius: rem-calc(15);
+
+	 		span.offer-type{
+	 			text-transform: uppercase;
+	 			font: bold 16px/30px Georgia, serif;
+	 		}
+	 		span.offer-price{
+	 		 font: bold 18px/30px Georgia, serif;
+	 		 color: red;
+	 		}
+	 		span.offer-state{
+	 			font: bold 14px/30px Georgia, serif;
+	 			color: green;
+	 		}
+		}
+
+	}
+	#flight-list-header{
+		margin: rem-calc(20);
+		font: italic bold 24px/30px Georgia, serif;
+		color: $black;
+	}
+	#international-flight-list{
+		margin: rem-calc(50 0);
+	}
+	
+}
+
+footer {
+	background-color: $secondary-color;
+	padding-top:rem-calc(30);
+	color: $black;
+
+	.menu{
+		a {
+			color:$black;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		li{
+			:hover{
+				color: blue;
+			}
+		}
+	}
+	.contact-information {
+		li {
+			position: relative;
+			height: 100px;
+			padding-left: 60px;
+			padding-top:35px;
+ 
+			&:first-child{
+			padding-top: 22px;
+			}
+			i{
+				font-size: rem-calc(60);
+				position: absolute;
+				top:0;
+				left:0; 
+			} 
+		}
+
+		
+	}
+	.social {
+		i {
+			font-size: rem-calc(60);
+			color: $black;
+		}
+	}
+	p.copyright {
+		padding: rem-calc(20 0);
+		background-color: $primary-color;
+		color: $white;
+		margin:0;
+	}
+ 
+}
+
