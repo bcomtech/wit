@@ -1,10 +1,9 @@
 body{
-    background: url('../img/bg1.png');
 	background: url('../img/bodybg.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-
 }
+
 div.orbit{
 	margin-bottom: rem-calc(15)
 }
@@ -92,7 +91,7 @@ div#signup-page{
 }
 div.top-header div.search-form ul.menu li.active a {
     color: #fefefe;
-    background: $black;
+    background: $primary-color;
     border-top-right-radius: rem-calc(15);
  	border-top-left-radius: rem-calc(15);
 
@@ -147,15 +146,9 @@ div.top-header{
                         
     }
 	    div.search-form{
+            opacity: 0.9;
+
             border-radius: rem-calc(25);
-	 	    background: transparent;
-	 	    opacity: 0.8;
-            div label{
-            @include breakpoint(medium down){
-                display:none;
-            }
-        }
-           
  		    ul.menu{
  			    padding: rem-calc(0);
 
@@ -184,7 +177,8 @@ div.top-header{
  			
  		    }   
  		    form{
- 			    background: $black;
+                
+                background: $primary-color;
  			    color: #ffc600;
  			    border-top-right-radius: rem-calc(5);
  			    border-bottom-left-radius: rem-calc(5);
@@ -194,13 +188,13 @@ div.top-header{
                     height: rem-calc(38);
  				    color: black;
  				    border-radius: rem-calc(5);
+                    padding: rem-calc(0);
+                    margin-bottom: rem-calc(5);
  			    }
                
  			    label{
  				    color: #ffc600;
  				    font: italic bold 14px/30px Georgia, serif;
-                    
-
  			    }
                 select{
                     height: rem-calc(38);

@@ -1,4 +1,14 @@
 $(document).foundation();
+$(function(){
+    $('.datepicker').datepicker({
+        dateFormat: 'dd-mm-yy' 
+    });
+    $('#flightdeparture').datepicker('setDate', new Date());
+    $('#flightreturn').datepicker('setDate', 'Now'+1);
+    $('#busdeparture').datepicker('setDate', new Date());
+    $('#busreturn').datepicker('setDate', 'Now'+1);
+
+ });
 
 $('#dropdown').click(function(){
 	console.log('clicked');
