@@ -322,15 +322,6 @@
     <!-- orbit begins here -->
     <div class="orbit show-for-large" role="region" aria-label="Our Services" data-orbit data-options="animInFromLeft: fade-in; animInFromRight:fade-in; animOutToLeft: fade-out; animOutToRight: fade-out" > 
         <ul class="orbit-container">
-         <!-- <button class="orbit-previous">
-            <span class="show-for-sr">Previous Slide</span>
-            &#9664; &#xFE0E;
-          </button>
-          <button class="orbit-next">
-            <span class="show-for-sr">Next Slide</span>
-            &#9654; 
-          </button>-->
-    
           <li class="is-active orbit-slide"><a href="#"><img class="orbit-image" src="img/bannerslidearik.jpg"></a></li>
           <li class="is-active orbit-slide"><a href="#"><img class="orbit-image" src="img/bannerslidebritish.jpg"></a></li>
           <li class="is-active orbit-slide"><a href="#"><img class="orbit-image" src="img/bannerslideemirates.jpg"></a></li>
@@ -342,14 +333,6 @@
      <!-- ./orbit -->
     <div class="orbit show-for-medium-only" role="region" aria-label="Our Services" data-orbit data-options="animInFromLeft: fade-in; animInFromRight:fade-in; animOutToLeft: fade-out; animOutToRight: fade-out" > 
         <ul class="orbit-container">
-         <!-- <button class="orbit-previous">
-            <span class="show-for-sr">Previous Slide</span>
-            &#9664; &#xFE0E;
-          </button>
-          <button class="orbit-next">
-            <span class="show-for-sr">Next Slide</span>
-            &#9654; 
-          </button>-->
     
           <li class="is-active orbit-slide"><a href="#"><img class="orbit-image" src="img/medium/medium1.jpg"></a></li>
           <li class="is-active orbit-slide"><a href="#"><img class="orbit-image" src="img/medium/medium2.jpg"></a></li>
@@ -360,16 +343,7 @@
 
     <div class="orbit show-for-small-only" role="region" aria-label="Our Services" data-orbit data-options="animInFromLeft: fade-in; animInFromRight:fade-in; animOutToLeft: fade-out; animOutToRight: fade-out" > 
         <ul class="orbit-container">
-         <!-- <button class="orbit-previous">
-            <span class="show-for-sr">Previous Slide</span>
-            &#9664; &#xFE0E;
-          </button>
-          <button class="orbit-next">
-            <span class="show-for-sr">Next Slide</span>
-            &#9654; 
-          </button>-->
-    
-          <li class="is-active orbit-slide"><a href="#"><img class="orbit-image" src="img/small/small1.jpg"></a></li>
+              <li class="is-active orbit-slide"><a href="#"><img class="orbit-image" src="img/small/small1.jpg"></a></li>
           <li class="is-active orbit-slide"><a href="#"><img class="orbit-image" src="img/small/small2.jpg"></a></li>
         </ul>
     
@@ -379,10 +353,13 @@
 
         
     </div> <!-- ./big-banner -->
-        <div class="search-section">
+
+<!--........................Search Form begins.............-->
+<div class=" search-form-container">
+            <div class="search-section">
         <div class="search-form row">
 
-          <div class="row large-8 medium-12 columns">
+          <div class=" row large-8 medium-12 columns">
           <ul class="menu medium-6 small-11 columns">
             <li class="wide-menu active text-center" id="flight-search-menu-item"><a href="#">Flight</a></li>
             <li class=""></li>
@@ -391,9 +368,8 @@
             <li class="wide-menu text-center" id="bus-search-menu-item"><a href="#">Buses</a></li>
           </ul>
           </div>
-          <div class="row">
           <div class="medium-12 xlarge-9 columns">
-         <form class="flight-search-form" >
+         <form class="row flight-search-form" >
           <div class="row">
              <div class="medium-12 small-12 columns radio " style="margin-top: 10px;">
                 <label></label>
@@ -404,11 +380,25 @@
         <div class="row">
           <div class="medium-12 large-5 small-12  columns" >
             <label class="show-for-large">Fly From:</label>
-            <input type="text" name="flyfrom"id="flyfrom" placeholder="Select City or Airport">
+            <div class="row flyfrom">
+                <div class="medium-12 columns" >
+            <input type="text" name="flyfrom"id="flyfrom" placeholder="Select City or Airport"  >
+                </div>
+                <div class="medium-1 columns icon-div" >
+             <i class="fi-marker input-icon" ></i>
+                </div>
+            </div>
           </div>
           <div class="medium-12 small-12 large-5 columns">
             <label class="show-for-large">Fly To:</label>
-            <input type="text" name="flyto" id="flyto" placeholder="Select City or Airport">
+            <div class="row flyto">
+                <div class="medium-12 columns" >
+            <input type="text" name="flyfrom"id="flyfrom" placeholder="Select City or Airport"  >
+                </div>
+                <div class="medium-1 columns icon-div">
+             <i class="fi-marker input-icon" ></i>
+                </div>
+            </div>
           </div>
           <div class="medium-12 small-12 large-2 columns">
             <label class="show-for-large">Class</label>
@@ -425,11 +415,25 @@
 
           <div class="medium-6 large-3 small-6   columns" >
             <label class="show-for-large">Departure:</label>
-            <input type="text" class=" datepicker " name="flightdeparture" id="flightdeparture">
+            <div class="row departure">
+            <div class="medium-12 columns"  style="position: relative;">
+            <input type="text" class=" datepicker " name="flightdeparture" id="flightdeparture" >
+             </div>
+            <div class="medium-1 columns icon-div">
+                 <i class="fi-calendar input-icon" ></i>
+             </div>
+            </div>
           </div>
           <div class="medium-6 large-3 small-6 columns">
             <label class="show-for-large">Return:</label>
-           <input type="text" class="datepicker " name="flightreturn" id="flightreturn">
+             <div class="row return">
+            <div class="medium-12 columns">
+            <input type="text" class=" datepicker " name="flightreturn" id="flightreturn">
+             </div>
+            <div class="medium-1 columns icon-div" >
+                 <i class="fi-calendar input-icon" ></i>
+             </div>
+            </div>
           </div>
           
           <div class="medium-2 small-4  columns ">
@@ -476,137 +480,11 @@
         <div class="row">
           <div class="medium-12 small-12 columns ">
               <label></label>
-             <button type="button" class="button small-12 medium-12 large-2" id="flightsearchbutton"><i class="fi-magnifying-glass">Search</i></button>
+             <button type="button" class="button small-12 medium-12 large-2" id="flightsearchbutton"><i class="fi-magnifying-glass">&nbsp;&nbsp;Search</i></button>
           </div>
           <div class="medium-4 columns"></div>
         </div>
         </form> <!--flight form ends here-->
-
-        <form class="bus-search-form hide" >
-        <div class="row">
-          <div class="medium-8 columns radio " style="padding-top:10px">
-              <!-- <label>Choose Trip Type</label> -->
-              <input type="radio" id="returnradio" name="tripType" checked=""> :- Return  &nbsp;
-              <input type="radio" id="onewayradio" name="tripType"> :- One Way &nbsp;
-              <!-- <input type="radio" name="tripType"> :- Multiple destinations -->
-          </div> 
-        </div>
-         
-        <div class="row">
-          <div class="medium-6  columns" >
-            <label>From:</label>
-            <input type="text" id="busfrom" name="busfrom" placeholder="Pick City">
-          </div>
-          <div class="medium-6 columns">
-            <label>Travel To:</label>
-            <input type="text" name="busto" id="busto" placeholder="Pick City">
-          </div>
-          
-        </div>
-        
-        <div class="row">
-
-          <div class="medium-4  columns" >
-            <label>Departure:</label>
-            <input type="text" class="datepicker" name="busdeparture" id="busdeparture" >
-          </div>
-          <div class="medium-4 columns">
-            <label >Return:</label>
-            <input type="text"class="datepicker" name="busreturn" id="busreturn">
-          </div>
-          <div class="medium-4 columns"></div>
-          
-        </div>
-        <div class="row">
-            <div class="medium-2 columns"></div>
-        </div>
-        <div class="row">
-          
-          
-          <div class="medium-12   columns">
-            <label>
-             <button type="button" class="button medium-2 columns" id="busbutton"><i class="fi-magnifying-glass">Search</i></button>
-           </label>
-          </div>
-          <!-- <div class="medium-4 columns"></div> -->
-        </div>
-        </form> <!--Bus form ends here-->
-        
-        <form class="hotels-search-form hide"> <!-- Hotels form begins here -->
-       
-        <div class="row">
-          <div class="medium-11  columns" >
-            <label>Destination:</label>
-            <input type="text" name="" placeholder="Destination, City or Hotel name">
-          </div>
-          
-        </div>
-        
-        <div class="row">
-
-          <div class="medium-5  columns" >
-            <label>Check In:</label>
-            <input type="date" name="" >
-          </div>
-          <div class="medium-5 columns">
-            <label >Check Out:</label>
-            <input type="date" name="" >
-          </div>
-          
-        </div>
-        <div class="row">
-          <div class="medium-2  columns ">
-            <label>Rooms</label>
-            <select>
-              <option>0</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-            </select>
-          </div>
-        
-      
-          <div class="medium-2 columns">
-            <label>Children</label>
-            <select>
-              <option>0</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-            </select>
-          </div>
-      
-          <div class="medium-2 columns">
-            <label>Adults</label>
-            <select>
-              
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-            </select>
-          </div> 
-      
-          <div class="medium-5 columns"></div>
-        </div>
-        <div class="row"> 
-          
-          <div class="medium-7  columns ">
-              <label></label>
-             <button type="button" class="button"><i class="fi-magnifying-glass">Search</i></button>
-          </div>
-          <div class="medium-4 columns"></div>
-        </div>
-        </form> <!-- Hotels form ends here -->
-
           </div>
           <div class="medium-3 float-right text-center show-for-xlarge" style="background: white; ">
             <p>Advertisement</p>
@@ -615,135 +493,16 @@
          
         </div>
         </div><!--/.Search-form -->
-      </div>
 <!-- Search Form ends here -->
-    </div> 
+<!--........................Search Form ends here .............-->
+
+
+
       </div><!-- ./top-header -->
       <!-- top-header ends here -->
 
 
-     <div class="list-wrapper">
-      <div class="offer-list-medium row">
-        <div id="local-flight-list">
-        <div class="row">
-          <div class="medium-12 text-center" id="flight-list-header">
-            <span>Discover Trending Local Flight Deals</span>
-          </div>
-        </div>
-        <div class="row "> <!-- offer set begins here-->
-          <div class="medium-3 columns offer"><a href="#">
-            <div class="offer-header text-center">
-              <span class="offer-departure">Accra</span><br>
-              <span class="offer-destination">Kumasi</span> 
-            </div>
-            <div class="offer-details text-center">
-              <span class="offer-type">Round Trip From</span><br>
-              <span class="offer-price">GHS 2,500.00</span><br>
-              <span class="offer-state">* Subject to Availability</span><br>
-              <span class="airline"><img src="img/logos/starbow.png"></span>
-            </div>
-          </div></a>
-           <div class="medium-3 columns offer"><a href="#">
-            <div class="offer-header text-center">
-              <span class="offer-departure">Accra(ACC)</span><br>
-              <span class="offer-destination">Tamale</span> 
-            </div>
-            <div class="offer-details text-center">
-              <span class="offer-type">Round Trip From</span><br>
-              <span class="offer-price">GHS 2,500.00</span><br>
-              <span class="offer-state">* Subject to Availability</span><br>
-              <span class="airline"><img src="img/logos/starbow.png"></span>
-            </div>
-          </div></a>
-           <div class="medium-3 columns offer"><a href="#">
-            <div class="offer-header text-center">
-              <span class="offer-departure">Accra(ACC)</span><br>
-              <span class="offer-destination">Takoradi</span> 
-            </div>
-            <div class="offer-details text-center">
-              <span class="offer-type">Round Trip From</span><br>
-              <span class="offer-price">GHS 2,500.00</span><br>
-              <span class="offer-state">* Subject to Availability</span><br>
-              <span class="airline"><img src="img/logos/starbow.png"></span>
-            </div>
-          </div></a>
-           <div class="medium-3 columns offer"><a href="#">
-            <div class="offer-header text-center">
-              <span class="offer-departure">Kumasi</span><br>
-              <span class="offer-destination">Tamale</span> 
-            </div>
-            <div class="offer-details text-center">
-              <span class="offer-type">Round Trip From</span><br>
-              <span class="offer-price">GHS 2,500.00</span><br>
-              <span class="offer-state">* Subject to Availability</span><br>
-              <span class="airline"><img src="img/logos/starbow.png"></span>
-            </div>
-          </div></a>
-        </div> <!--offer set ends here-->
-
-        <div class="row "> <!-- offer set begins here-->
-          <div class="medium-3 columns offer">
-            <div class="offer-header text-center">
-              <span class="offer-departure">Tamale</span><br>
-              <span class="offer-destination">Takoradi</span> 
-            </div>
-            <div class="offer-details text-center">
-              <span class="offer-type">Round Trip From</span><br>
-              <span class="offer-price">GHS 2,500.00</span><br>
-              <span class="offer-state">* Subject to Availability</span><br>
-              <span class="airline"><img src="img/logos/africaworld.png"></span>
-            </div>
-          </div>
-           <div class="medium-3 columns offer">
-            <div class="offer-header text-center">
-              <span class="offer-departure">Accra(ACC)</span><br>
-              <span class="offer-destination">Wa</span> 
-            </div>
-            <div class="offer-details text-center">
-              <span class="offer-type">Round Trip From</span><br>
-              <span class="offer-price">GHS 2,500.00</span><br>
-              <span class="offer-state">* Subject to Availability</span><br>
-              <span class="airline"><img src="img/logos/africaworld.png"></span>
-            </div>
-          </div>
-           <div class="medium-3 columns offer">
-            <div class="offer-header text-center">
-              <span class="offer-departure">Accra(ACC)</span><br>
-              <span class="offer-destination">Cheriponi</span> 
-            </div>
-            <div class="offer-details text-center">
-              <span class="offer-type">Round Trip From</span><br>
-              <span class="offer-price">GHS 2,500.00</span><br>
-              <span class="offer-state">* Subject to Availability</span><br>
-              <span class="airline"><img src="img/logos/africaworld.png"></span>
-            </div>
-          </div>
-           <div class="medium-3 columns offer">
-            <div class="offer-header text-center">
-              <span class="offer-departure">Accra(ACC)</span><br>
-              <span class="offer-destination">Bolga</span> 
-            </div>
-            <div class="offer-details text-center">
-              <span class="offer-type">Round Trip From</span><br>
-              <span class="offer-price">GHS 2,500.00</span><br>
-              <span class="offer-state">* Subject to Availability</span><br>
-              <span class="airline"><img src="img/logos/africaworld.png"></span>
-            </div>
-          </div>
-        </div> <!--offer set ends here-->
-        </div> <!--/#local flight-list ends here-->
-
-       
-
-         
-
-      </div><!-- /.Offer list ends here -->
-
-      </div><!-- /.Offer list ends here -->
-
-      </div><!--List wrapper ends here-->
-
-   
+        
 
            
      <footer>
