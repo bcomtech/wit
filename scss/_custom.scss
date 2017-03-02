@@ -1,12 +1,9 @@
 body{
-	background: url('../img/bodybg.png');
+/*	background: url('../img/bodybg.png');
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-attachment: fixed;*/
 }
 
-div.orbit{
-	margin-bottom: rem-calc(15)
-}
 
 div.top-menu{
 	.menu{
@@ -34,10 +31,10 @@ div.top-menu{
 
 }
 div.top-bar{
-		background: $primary-color;
+		background: none;
         ul li a{
-
-            font: italic bold 18px/30px Georgia serif;
+            border-radius: rem-calc(8);
+            font: 18px/30px Georgia serif;
         }
 		
 	}
@@ -45,7 +42,7 @@ div.top-bar{
 	background: transparent;
 	li{
 		a{
-			color: #ffc600;
+			color: lighten($primary-color, 20%);
 			font: italic bold 14px/30px Georgia, serif;
 
 		}
@@ -119,7 +116,7 @@ input::-ms-input-placeholder{
     position: relative;
     .search-form-container{
         position: absolute;
-        top: 10%;
+        top: 5%;
         width: 100%;
         @include breakpoint(medium){
                 @include breakpoint(landscape){
@@ -315,10 +312,10 @@ input::-ms-input-placeholder{
 }
 
 
-.menu-icon{
+.fi-list{
+    color: $primary-color;
 	margin: rem-calc(10);
-	width: rem-calc(40);
-	
+    font-size: rem-calc(20);	
 }
 .menu-icon:hover{
 	background-color: $black;
