@@ -46,3 +46,9 @@ $('.wide-menu').click(function(){
 });
 
 /**************** Search form ends here **********************/
+function getHeight(element){
+    return $(element).height() + 20 +'px';
+}
+frmHeight = getHeight('.search-form');
+console.log(frmHeight);
+$('.kill').css('height', frmHeight);
