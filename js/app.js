@@ -1,10 +1,18 @@
 $(document).foundation();
+
+function getHeight(element){
+    return $(element).height() + 20 +'px';
+}
+frmHeight = getHeight('.search-form');
+console.log(frmHeight);
+$('.fit').css('height', frmHeight);
+
 $(function(){
     $('.datepicker').datepicker({
         dateFormat: 'dd-mm-yy' 
     });
-    $('#flightdeparture').datepicker('setDate', new Date());
-    $('#flightreturn').datepicker('setDate', 'Now'+1);
+    $('#flightDepartureDate').datepicker('setDate', new Date());
+    $('#flightReturnDate').datepicker('setDate', 'Now'+1);
     $('#busdeparture').datepicker('setDate', new Date());
     $('#busreturn').datepicker('setDate', 'Now'+1);
 
@@ -45,10 +53,26 @@ $('.wide-menu').click(function(){
 
 });
 
+$('#flightOneWay').click(function(){ 
+        $('.hide-return-date').hide();
+        $('#flightMultipleDest').removeClass('active');
+        $('#flightRoundTrip').removeClass('active');
+        $(this).addClass('active');
+});
+$('#flightRoundTrip').click(function(){ 
+        $('.hide-return-date').show();
+        $('#flightMultipleDest').removeClass('active');
+        $('#flightOneWay').removeClass('active');
+        $(this).addClass('active');
+});
+$('#flightMultipleDest').click(function(){ 
+        $('.hide-return-date').hide();
+        $('#flightRoundTrip').removeClass('active');
+        $('#flightOneWay').removeClass('active');
+        $(this).addClass('active');
+   });
+    
+
+
 /**************** Search form ends here **********************/
-function getHeight(element){
-    return $(element).height() + 20 +'px';
-}
-frmHeight = getHeight('.search-form');
-console.log(frmHeight);
-$('.kill').css('height', frmHeight);
+

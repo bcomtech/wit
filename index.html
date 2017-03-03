@@ -335,15 +335,23 @@
     <!-- orbit begins here -->
     <div class="orbit " role="region" aria-label="Our Services" data-orbit data-options="animInFromLeft: fade-in; animInFromRight:fade-in; animOutToLeft: fade-out; animOutToRight: fade-out" > 
         <ul class="orbit-container">
-         <!-- <li class="is-active orbit-slide"><a href="#"><img class="orbit-image" src="img/bannerslidearik.jpg"></a></li>
-          <li class="is-active orbit-slide"><a href="#"><img class="orbit-image" src="img/bannerslidebritish.jpg"></a></li>
-          <li class="is-active orbit-slide"><a href="#"><img class="orbit-image" src="img/bannerslideemirates.jpg"></a></li>
-           <li class="is-active orbit-slide"><a href="#"><img class="orbit-image" src="img/banner2.png"></a></li> -->
-        <li class="is-active orbit-slide"><a href="#"><img class="orbit-image kill" src="img/ghana.jpg"></a></li> 
-        <li class="is-active orbit-slide"><a href="#"><img class="orbit-image kill" src="img/sea.jpg"></a></li>
+        <li class="is-active orbit-slide "><a href="#"><img class="orbit-image fit" src="img/ghana.jpg"></a></li> 
+        <li class="is-active orbit-slide "><a href="#"><img class="orbit-image fit" src="img/sea.jpg"></a></li>
         </ul>
-    
      </div>
+   <!-- <div class="orbit show-for-small-only" role="region" aria-label="Our Services" data-orbit data-options="animInFromLeft: fade-in; animInFromRight:fade-in; animOutToLeft: fade-out; animOutToRight: fade-out" > 
+        <ul class="orbit-container">
+        <li class="is-active orbit-slide"><img class="orbit-image fit" src="img/small/portriat1.png"></li>
+        <li class="is-active orbit-slide"><img class="orbit-image fit" src="img/small/portriat2.png"></li>
+        </ul>
+     </div>
+    <div class="orbit show-for-medium-only" role="region" aria-label="Our Services" data-orbit data-options="animInFromLeft: fade-in; animInFromRight:fade-in; animOutToLeft: fade-out; animOutToRight: fade-out" > 
+        <ul class="orbit-container">
+        <li class="is-active orbit-slide"><img class="orbit-image fit" src="img/medium/portriat1.png"></li>
+        <li class="is-active orbit-slide"><img class="orbit-image fit" src="img/medium/portriat2.png"></li>
+        </ul>
+    </div>-->
+
 
 <!--........................Search Form begins.............-->
 <div class=" search-form-container">
@@ -351,21 +359,27 @@
         <div class="search-form row">
 
           <div class=" row large-8 medium-12 columns">
-          <ul class="menu medium-6 small-11 columns">
-            <li class="wide-menu active text-center" id="flight-search-menu-item"><a href="#">Flight</a></li>
+          <ul class="menu search-menu  medium-6 small-11 columns">
+            <li class="wide-menu active text-center" id="flight-search-menu-item"><a href="#">Flights</a></li>
             <li class=""></li>
             <!-- <li class="wide-menu text-center" id="hotel-search-menu-item"><a href="#">Hotels</a></li> -->
             <li class="">&nbsp&nbsp</li>
             <li class="wide-menu text-center" id="bus-search-menu-item"><a href="#">Buses</a></li>
           </ul>
           </div>
-          <div class="medium-12 xlarge-9 columns">
+          <div class="medium-12 large-9 columns">
          <form class="row flight-search-form" >
           <div class="row">
              <div class="medium-12 small-12 columns radio " style="margin-top: 10px;">
-                <label></label>
+                 <ul class="menu trip-type-menu">
+                     <li class="trip-type" id="flightOneWay"><a href="#">One way</a></li>
+                     <li class="active trip-type" id="flightRoundTrip"><a href="#">Round trip</a></li>
+                     <li class="trip-type" id="flightMultipleDest"><a href="#">Multiple Destinations</a></li>
+                 </ul>
+               <!-- <label></label>
                 <input type="radio" name="tripType" checked=""> :- Return &nbsp;
                 <input type="radio" name="tripType"> :- One Way
+               -->
             </div> 
           </div>
         <div class="row">
@@ -375,9 +389,9 @@
                 <div class="medium-12 columns" >
             <input type="text" name="flyfrom"id="flyfrom" placeholder="Select City or Airport"  >
                 </div>
-                <div class="medium-1 columns icon-div" >
+                <!--<div class="medium-1 columns icon-div" >
              <i class="fi-marker input-icon" ></i>
-                </div>
+                </div>-->
             </div>
           </div>
           <div class="medium-12 small-12 large-5 columns">
@@ -386,9 +400,9 @@
                 <div class="medium-12 columns" >
             <input type="text" name="flyfrom"id="flyfrom" placeholder="Select City or Airport"  >
                 </div>
-                <div class="medium-1 columns icon-div">
+               <!-- <div class="medium-1 columns icon-div">
              <i class="fi-marker input-icon" ></i>
-                </div>
+               </div>-->
             </div>
           </div>
           <div class="medium-12 small-12 large-2 columns">
@@ -404,26 +418,26 @@
         </div>
         <div class="row">
 
-          <div class="medium-6 large-3 small-6   columns" >
+          <div class="medium-12 large-3 small-12   columns" >
             <label class="show-for-large">Departure:</label>
             <div class="row departure">
             <div class="medium-12 columns"  style="position: relative;">
-            <input type="text" class=" datepicker " name="flightdeparture" id="flightdeparture" >
+            <input type="text" class=" datepicker " name="flightDepartureDate" id="flightDepartureDate" >
              </div>
-            <div class="medium-1 columns icon-div">
+           <!-- <div class="medium-1 columns icon-div">
                  <i class="fi-calendar input-icon" ></i>
-             </div>
+           </div>-->
             </div>
           </div>
-          <div class="medium-6 large-3 small-6 columns">
-            <label class="show-for-large">Return:</label>
+          <div class="medium-12 large-3 small-12 columns ">
+            <label class="show-for-large ">Return:</label>
              <div class="row return">
-            <div class="medium-12 columns">
-            <input type="text" class=" datepicker " name="flightreturn" id="flightreturn">
+            <div class="medium-12 columns hide-return-date">
+            <input type="text" class=" datepicker " name="flightReturnDate" id="flightReturnDate">
              </div>
-            <div class="medium-1 columns icon-div" >
+           <!-- <div class="medium-1 columns icon-div" >
                  <i class="fi-calendar input-icon" ></i>
-             </div>
+           </div> -->
             </div>
           </div>
           
@@ -477,9 +491,9 @@
         </div>
         </form> <!--flight form ends here-->
           </div>
-          <div class="medium-3 float-right text-center show-for-xlarge" style="background: white; ">
+          <div class="medium-3  float-right text-center show-for-large" style="background: white; ">
             <p>Advertisement</p>
-          </div>
+         </div>
           </div>
          
         </div>

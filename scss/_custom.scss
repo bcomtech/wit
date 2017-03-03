@@ -1,4 +1,5 @@
 body{
+    font-family: arial;
 /*	background: url('../img/bodybg.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;*/
@@ -92,7 +93,7 @@ div.contact-us-button{
 div#signup-page{
 	color: black;
 }
-div.top-header div.search-form ul.menu li.active a {
+div.top-header div.search-form ul.search-menu li.active a {
     color: #fefefe;
     background: $primary-color;
     border-top-right-radius: rem-calc(15);
@@ -137,7 +138,7 @@ input::-ms-input-placeholder{
             opacity: 0.9;
 
             border-radius: rem-calc(25);
- 		    ul.menu{
+ 		    ul.search-menu{
  			    padding: rem-calc(0);
 
  			    > li{
@@ -148,30 +149,38 @@ input::-ms-input-placeholder{
     				    font-weight: bold;
     				    color: #34444e;
 					    }
- 			    } 
+ 			    }
  			    > li.wide-menu{
  					width: rem-calc(200);
  					background: darken($secondary-color,1%);
  					margin-top: rem-calc(20);
 
- 			    }   
+ 			    }
  			   li.active{
 				    background: $primary-color;
 				    a{
 					    color: $white;
 				    }
-				
 				}
- 			
- 		    }   
+ 		    }
  		    form{
-                
                 background: $primary-color;
  			    color: #ffc600;
  			    border-top-right-radius: rem-calc(5);
  			    border-bottom-left-radius: rem-calc(5);
  			    border-bottom-right-radius: rem-calc(5);
  			    padding: rem-calc(0 10);
+                .menu li{
+                    a{
+                        color: $white;
+                        font: 16px Georgia serif;
+                        border-radius: rem-calc(2);
+                        padding: rem-calc(5);
+                        @include breakpoint(small medium){
+                            margin: rem-calc(5 0);
+                        }
+                    }
+                }
  			    input{
                     height: rem-calc(38);
  				    color: black;
@@ -213,20 +222,22 @@ input::-ms-input-placeholder{
                             left:  2%;
                             
                         }
-                        @include breakpoint(medium only){
+                        @include breakpoint(medium large only){
+                            @include breakpoint(landscape){
                             top: 22%;
+                        }
                             left: 0.5%;
                             
                         }
-                        @include breakpoint(large only){
+                       /* @include breakpoint(large only){
                             left: 0.5%;
                         }
                         @include breakpoint(xlarge only){
                             left: 3%;
                         }
                         @include breakpoint(xxlarge only){
-                            left: 8%;
-                        }
+                            left: 12.5%;
+                        }*/
                     }
                 }
                 .flyto{
@@ -243,15 +254,15 @@ input::-ms-input-placeholder{
                             top: 32%;
                             left: 0.5%;
                         }
-                        @include breakpoint(xlarge only){
+                       /* @include breakpoint(xlarge only){
                             left: 33%;
                         }
                         @include breakpoint(large only){
                             left: 42%;
                         }
                         @include breakpoint(xxlarge only){
-                            left: 35%;
-                        }
+                            left: 36.2%;
+                        }*/
                     }
                 }
                 .departure{
@@ -268,15 +279,15 @@ input::-ms-input-placeholder{
                             top: 55%;
                             left: 0.5%;
                         }
-                       @include breakpoint(xlarge only){
+                      /* @include breakpoint(xlarge only){
                             left: 3%;
                        }
                        @include breakpoint(large only){
                             left: 0.2%;
                        }
                        @include breakpoint(xxlarge only){
-                            left: 8%;
-                       }
+                            left: 12.5%;
+                       }*/
                     }
                 }
                 .return{
@@ -293,15 +304,15 @@ input::-ms-input-placeholder{
                             top: 55%;
                             left: 51%;
                         }
-                        @include breakpoint(large only){
+                       /* @include breakpoint(large only){
                             left: 25%;
                         }
                         @include breakpoint(xlarge only){
                             left: 21%;
                         }
                         @include breakpoint(xxlarge only){
-                            left: 24%;
-                        }
+                            left: 26.7%;
+                        }*/
                     }
                 }
                
